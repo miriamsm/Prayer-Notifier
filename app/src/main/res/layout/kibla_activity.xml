@@ -1,0 +1,109 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".prayernotifier.Kibla_Activity">
+
+    <RelativeLayout
+        android:id="@+id/inner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/compass_layout"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kibla_location"
+                style="@style/locationStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="@drawable/tab_menu_active"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/location"
+                android:textColor="@color/colorSecondary" />
+
+            <TextView
+                android:id="@+id/langlat_location"
+                style="@style/locationStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="@drawable/tab_menu_active"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/colorSecondary" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/compass_layout"
+            android:layout_width="300.0dip"
+            android:layout_height="300.0dip"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/image_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageViewCompass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="12.0dip"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/compass_background" />
+
+                <ImageView
+                    android:id="@+id/imageViewPointer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="18.0dip"
+                    android:layout_marginTop="18.0dip"
+                    android:layout_marginEnd="18.0dip"
+                    android:layout_marginBottom="18.0dip"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/pointer_1" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/kibla_warning"
+            style="@style/locationStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/compass_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/tab_menu_active"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="app_version"
+            android:textColor="@color/colorSecondary"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+    <PreferenceCategory android:title="">
+
+        <Preference
+            android:title="@string/location_title"
+            android:key="location_pref"
+            android:icon="@drawable/baseline_add_location_24"
+            android:clickable="true"/>
+        <ListPreference
+            android:defaultValue="@string/juristic_default"
+            android:entries="@array/juristic_entries"
+            android:entryValues="@array/juristic_values"
+            android:key="juristic"
+            android:title="@string/juristic_title"
+            android:icon="@drawable/baseline_auto_mode_24"/>
+
+        <ListPreference
+            android:defaultValue="@string/calculation_default"
+            android:entries="@array/calculation_entries"
+            android:entryValues="@array/calculation_values"
+            android:key="@string/calculation"
+            android:title="Calculation Method"
+            android:icon="@drawable/baseline_change_circle_24"/>
+
+        <ListPreference
+            android:defaultValue="@string/latitude_default"
+            android:entries="@array/latitude_entries"
+            android:entryValues="@array/latitude_values"
+            android:key="@string/latitude"
+            android:title="Adjustments"
+            android:icon="@drawable/baseline_border_color_24"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Silence Phone">
+        <EditTextPreference
+            android:defaultValue="0"
+            android:key="silent"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Choose the time in minutes to switch your phone to silent mode"
+            android:title="Set the silent mode time"
+            android:icon="@drawable/baseline_alarm_off_24"/>
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

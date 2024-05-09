@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/colorprimarydark</item>
+        <item name="android:textColorTertiary">@color/colorprimarydark</item>
+        <item name="android:buttonBarButtonStyle">@style/MyDialogButton</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/changa_bold</item>
+        <item name="android:background">@color/lightblue</item>
+    </style>
+
+    <style name="MyDialogButton"></style>
+
+
+</resources>
